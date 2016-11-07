@@ -1,0 +1,60 @@
+
+$row-border-color: $black;
+$background-color: $white;
+$font-color: $black;
+
+body {
+  background-color: $background-color;
+  color: $font-color;
+}
+
+.box {
+  border: 1px solid $black;
+  height: 40px;
+}
+
+.main {
+  display: flex;
+  height: 300px;
+  flex-wrap: wrap;
+}
+
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  order: 2;
+  width: 60%;
+  max-height: 300;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.space {
+  width: 33%;
+  border: 1px solid $black;
+}
+.space-mid {
+  width: 34%;
+  border: 1px solid $black;
+}
+
+.player-1-stats {
+  display: flex;
+  order: 1;
+  width: 18%;
+  height: auto;
+  border: 1px solid $black;
+}
+
+.player-2-stats {
+  display: flex;
+  order: 3;
+  width: 18%;
+  height: auto;
+  border: 1px solid $black;
+}
+
+img {
+  width: 100%;
+  height: 100px;
+}

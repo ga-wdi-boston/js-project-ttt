@@ -1,0 +1,10 @@
+{
+  "default": ["nag"],
+  "build": ["webpack:build"],
+  "server": ["webpack-dev-server:start"],
+  "serve": ["server"],
+  "s": ["server"],
+  "nag": ["jshint", "jsonlint:all", "jscs:status"],
+  "reformat": ["jscs:write"],
+  "test": ["build", "jasmine"]
+}

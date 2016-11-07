@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>API Token Auth</title>
+
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <script src="dependencies.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="bundle.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body class="container-fluid">
+
+
+
+      <div>
+        <!--NAVBAR STARTS HERE-->
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">TacTicToel</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                  <a id="account-menu" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Sign up/in<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li id="sign-in-button"  id="sign-in">
+                      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-in-modal">
+                      Sign In
+                      </button>
+                    </li>
+                    <li id="sign-up-button">
+                      <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#sign-up-modal">
+                      Sign Up
+                      </button>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse-->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <!--NAVBAR ENDS HERE-->
+      </div>
+
+      <br>
+      <div id="new-game-buttons">
+        <button type="button" name="button" class="new-game">Hot-Seat</button>
+        <form id="load-hotseat">
+          <button type="submit">Load Hot-Seat Game</button>
+          <input type="number" name="sessionId" placeholder="Session ID">
+        </form>
+      </div>
+      <button type="button" name="button" class="forfeit">Forfeit</button>
+      <button type="button" name="button" class="saveQuit">Save+Quit</button>
+      <br>
+
+      <div class="main">
+
+        <div class="game-grid">
+          <div class="space"><img src="./assets/images/blankSpace.png" alt="ticTacToeBoard" class="grid-space" id="space0"/></div>
+          <div class="space-mid"><img src="./assets/images/blankSpace.png" alt="ticTacToeBoard" class="grid-space" id="space1"/></div>
+          <div class="space"><img src="./assets/images/blankSpace.png" alt="ticTacToeBoard" class="grid-space" id="space2"/></div>
+          <div class="space"><img src="./assets/images/blankSpace.png" alt="ticTacToeBoard" class="grid-space" id="space3"/></div>
+          <div class="space-mid"><img src="./assets/images/blankSpace.png" alt="ticTacToeBoard" class="grid-space" id="space4"/></div>
+          <div class="space"><img src="./assets/images/blankSpace.png" alt="ticTacToeBoard" class="grid-space" id="space5"/></div>
+          <div class="space"><img src="./assets/images/blankSpace.png" alt="ticTacToeBoard" class="grid-space" id="space6"/></div>
+          <div class="space-mid"><img src="./assets/images/blankSpace.png" alt="ticTacToeBoard" class="grid-space" id="space7"/></div>
+          <div class="space"><img src="./assets/images/blankSpace.png" alt="ticTacToeBoard" class="grid-space" id="space8"/></div>
+        </div>
+        <div id="player1Stats" class="player-1-stats">
+          <h4 id="player-1-stats"></h4>
+        </div>
+        <div id="player2Stats" class="player-2-stats">
+        </div>
+      </div>
+      <h1 id="session-id-display"></h1>
+      <h1 id="winner-text"></h1>
+
+
+
+      <!-- Start Modal -->
+      <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <form id="sign-in">
+                <legend>Sign in!</legend>
+                <input type="text" name="credentials[email]" placeholder="Email">
+                <input type="password" name="credentials[password]" placeholder="Password">
+                <br>
+                <br>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Stop Modal -->
+
+      <!-- Start Modal -->
+      <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <form id="sign-up">
+                <legend>Sign up!</legend>
+                <input type="text" name="credentials[email]" placeholder="Email">
+                <input type="password" name="credentials[password]" placeholder="Password">
+                <input type="password" name="credentials[password_confirmaiton]" placeholder="Confirm Password">
+                <br>
+                <br>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Stop Modal -->
+
+
+
+      <!-- Start Modal -->
+      <div class="modal fade" id="change-password-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+              <form id="change-password">
+                <legend>Change Password!</legend>
+                <input type="password" name="passwords[old]" placeholder="Old Password">
+                <input type="password" name="passwords[new]" placeholder="New Password">
+                <br>
+                <br>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Stop Modal -->
+
+
+    </body>
+</html>

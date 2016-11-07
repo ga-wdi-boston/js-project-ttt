@@ -1,0 +1,7 @@
+@import 'breakpoint';
+
+body {
+  @include breakpoint(tiny) {
+    margin: ($vertical-margin * .5) 20px;
+  }
+}

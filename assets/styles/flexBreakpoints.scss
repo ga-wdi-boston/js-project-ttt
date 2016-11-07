@@ -1,0 +1,37 @@
+//tiny media
+@media screen and (max-width: 767px) {
+  .main {
+    height: 600px;
+  }
+  .game-grid {
+    order: 1;
+    min-width: 100%;
+    max-height: 300px;
+  }
+  .player-1-stats {
+    order: 2;
+    min-width: 50%;
+  }
+  .player-2-stats {
+    min-width: 50%;
+  }
+}
+
+// small media
+@media screen and (min-width: 768px) {
+}
+/*
+// medium media
+@media screen and (min-width:  992px) {
+
+}
+
+// large media
+@media screen and (1200px) {
+
+}
+
+// custom media
+@media screen and (max-width: 40em) {
+
+}*/
