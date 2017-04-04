@@ -1,0 +1,34 @@
+A wireframe of what your game project will look like.
+![Wire Frame](images/2017/04/IMG_5657.JPG)
+The data structure you plan to use.
+
+I plan to use the api json structure to store my objects.  I will use the
+store feature as covered in class to persist any data like the token.
+
+How you will take the markup of the game board and represent it in JS
+
+I will use lots of divs and css to format the page.  I may use some sass and
+keep similar things together.
+
+How you plan to approach this project.
+
+I will build user stories, starting with those that allow me to get the
+basic function going and build on that from there.
+
+4-8 user stories for your game project.  I came up with 12 stories.
+![User Stories](/images/2017/04/IMG_5656.JPG)
+How you plan to keep your code modular.
+
+Using the DRY practice I refactor code as I see a pattern of copy and paste appearing.
+
+What creative spin will you add to your project?
+
+If time permits, use some different graphics for the X and O
+
+How will you use version control to backup / track your project?
+
+I will checkin code often and commit code for each story that is worked.
+
+Do you plan to attempt any of the bonuses?
+
+Not at this time.
