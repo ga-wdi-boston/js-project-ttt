@@ -6,19 +6,41 @@ Always be commiting. Deploy early and often.
 
 Here's a rough sketch of what you should do and in what order:
 
-1.  [ ] Sketch some rough wireframes for how the front end will look and act.
-1.  [ ] Write out some user stories for the app. User stories are short of how a
-    user interacts with your app, and follows the format "As a `<role>`, I want
-    to `<do something>`, so that `<some goal>`.
-1.  [ ] Model the entities in your app. Draw a diagram. Use your wireframes and
-    user stories to drive you modeling process by asking "What 'things' are a
-    user interacting with?"
-1.  [ ] Create a repo that your project will use, and add a README to it.
-1.  [ ] Create a simple front-end with HTML and CSS, and host the front end on
-    GitHub Pages. Use your wireframes to guide your layout.
-1.  [ ] Create the code to manage your game logic.
-1.  [ ] Write jQuery code to handle browser interaction.
-1.  [ ] Start communicating with the back-end using `curl`. Use this to begin
-    writing your AJAX code.
-1.  [ ] Add any additional features to your app.
-1.  [ ] Finish your documentation. Make it high-quality.
+### Planning
+1.  [ ] Review [game-project-scope-study](https://github.com/ga-wdi-boston/game-project-scope-study/blob/master/study.md)
+1.  [ ] User Stories
+1.  [ ] Wire Frames
+
+### Set Up
+1.  [ ] [Download Browser Template](https://github.com/ga-wdi-boston/browser-template)
+1.  [ ] Create a Github Repository
+1.  [ ] [Deploy to Github Pages](https://github.com/ga-wdi-boston/gh-pages-deployment-guide)
+
+### Authentication
+1.  [ ] Review [api-token-auth](https://github.com/ga-wdi-boston/api-token-auth)
+1.  [ ] Auth: Sign Up (curl then web app)
+1.  [ ] Auth: Sign In (curl then web app)
+1.  [ ] Auth: Change Password (curl then web app)
+1.  [ ] Auth: Sign Out (curl then web page)
+
+### Game Engine
+1.  [ ] Create Empty Board
+1.  [ ] Add to Board
+1.  [ ] Check Board for Winner
+
+### Game UI
+1.  [ ] Start New Game
+1.  [ ] Play Interactive Game
+
+### Game API
+1.  [ ] Review [query-ajax-post](https://github.com/ga-wdi-boston/jquery-ajax-post)
+1.  [ ] Create Game (curl then web app)
+1.  [ ] Update Game (curl then web app)
+1.  [ ] Get Games (curl then web app)
+1.  [ ] Get a Game (curl then web app)
+
+### Final Touches
+1.  [ ] README
+2.  [ ] Troubleshoot/Debug
+3.  [ ] Style
+4.  [ ] Bonus (optional)
