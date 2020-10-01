@@ -65,7 +65,7 @@ your feet wet in the world of web development. Those who dare will have the
 tools to make it **multi-player, and multi-device** – so you can say to someone,
 "hand me your phone," load up the game, and play a quick round!
 
-## Additional Resources
+## Update and change the Additional Resources
 
 -   [MDN Javascript Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 -   [jQuery Docs](http://api.jquery.com)
